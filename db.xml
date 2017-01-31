@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dbconfig>
+  <dbhost>localhost</dbhost>
+  <dbuser>root</dbuser>
+  <dbpass></dbpass>
+  <dbname>test</dbname>
+</dbconfig>
