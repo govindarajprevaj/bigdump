@@ -11,7 +11,6 @@ try
 	if ($link) {
 		$query = "SHOW DATABASES";
 		$result = mysqli_query($link , $query);
-		$row = mysqli_fetch_array($result);
 		$database = array();
 		while($result_val = mysqli_fetch_array($result))
 		{
