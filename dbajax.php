@@ -1,10 +1,10 @@
 <?php
 error_reporting(0);
 
-$dbhost   = isset($_POST["dbhost"]) ? $_POST["dbhost"] : 'localhost';
-$db_name     = isset($_POST["dbname"]) ? $_POST["dbname"] : 'test';
-$dbusername = isset($_POST["dbuser"]) ? $_POST["dbuser"] : 'root';
-$dbpassword = isset($_POST["dbpass"]) ? $_POST["dbpass"] : ''; 
+$dbhost   = isset($_POST["dbhost"]);
+$db_name     = isset($_POST["dbname"]);
+$dbusername = isset($_POST["dbuser"]);
+$dbpassword = isset($_POST["dbpass"]); 
 try 
 {
 	$link = mysqli_connect ($dbhost, $dbusername, $dbpassword); 

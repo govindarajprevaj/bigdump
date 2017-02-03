@@ -38,10 +38,10 @@ error_reporting(E_ALL);
 
 // Database configuration
 
-$db_server   = isset($_POST["dbhost"]) ? $_POST["dbhost"] : 'localhost';
-$db_name     = isset($_POST["dbname"]) ? $_POST["dbname"] : 'test';
-$db_username = isset($_POST["dbuser"]) ? $_POST["dbuser"] : 'root';
-$db_password = isset($_POST["dbpass"]) ? $_POST["dbpass"] : ''; 
+$db_server   = isset($_POST["dbhost"]);
+$db_name     = isset($_POST["dbname"]);
+$db_username = isset($_POST["dbuser"]);
+$db_password = isset($_POST["dbpass"]); 
 
 // Connection charset should be the same as the dump file charset (utf8, latin1, cp1251, koi8r etc.)
 // See http://dev.mysql.com/doc/refman/5.0/en/charset-charsets.html for the full list
